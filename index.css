@@ -30,6 +30,8 @@ div h2{
     text-align: center;
 }
 div#study {
+
+    text-align: center;
 	grid-template-columns:690px 690px;
 	display: grid;
 	width: 800px;
