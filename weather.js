@@ -1,10 +1,15 @@
-
+let a = document.querySelector('input[name="text"]');
+let b = document.querySelector('button#but') ;
+b.addEventListener('click', cli);
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
   console.log(data.name + "の天気は");
   console.log(data.weather[0].description);
   console.log("最高気温は"+ data.main.temp_max +"℃");
   console.log("湿度は"+ data.main.humidity +"%");
+}
+function cli(){
+  console.log("検索キーワード : " + a.value);
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
