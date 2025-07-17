@@ -5,12 +5,28 @@
       <title>世界の天気</title>
       <link rel="stylesheet" href="project.css">
       <script src="weather.js" defer></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
   </head>
   <body>
     <h1>世界の天気情報サイト</h1>
-    <label for="text">検索欄: </label>
-	<input type="text" name="text" size="10" id="text">
+    <label for="pul">検索欄: </label>
+	<select name="pul" id="pul">
+        <option value="360630">カイロ （エジプト）</option>
+        <option value="524901">モスクワ （ロシア）</option>
+        <option value="993800">ヨハネスブルク （南アフリカ）</option>
+        <option value="1816670">北京 （中華人民共和国）</option>
+        <option value="1850147">東京 （日本）</option>
+        <option value="1880252">シンガポール</option>
+        <option value="2643743">ロンドン （イギリス）</option>
+        <option value="2968815">パリ （フランス）</option>
+        <option value="3451189">リオデジャネイロ （ブラジル）</option>
+        <option value="5128581">アメリカ(ニューヨーク)</option>
+        <option value="5368361">ニューヨーク （アメリカ合衆国）</option>
+        <option value="2147714">ロサンゼルス （アメリカ合衆国）</option>
+    </select>
 	<button id="but">検索</button>
+    <!--
     <h2><u>検索結果(1件)</u></h2>
     <h3><strong>北京市</strong>の天気は</h3>
     <div id="zentai">
@@ -23,3 +39,5 @@
     <h3>です！</h3>
 
     <img src="cloud.png" width="200">
+    -->
+    </body>

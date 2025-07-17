@@ -32,7 +32,7 @@ div h2{
 div#study {
 
     text-align: center;
-	grid-template-columns:690px 690px;
+	grid-template-columns:675px 675px;
 	display: grid;
 	width: 800px;
 	height: 200px;
@@ -40,6 +40,19 @@ div#study {
 	row-gap: 10px;
     
 }
+
+.D {
+
+    text-align: center;
+	grid-template-columns:1350px;
+	display: grid;
+	width: 1350px;
+	height: 200px;
+	column-gap: 10px;
+	row-gap: 10px;
+    
+}
+
 div#study > div {
 	background-color: #ffefaf;
     border: solid #fecb00;
