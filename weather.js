@@ -15,6 +15,11 @@ function cli(){
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+
+  let pu = document.querySelector('select#pul');
+  let idx = pu.selectedIndex;
+  let os = pu.querySelectorAll('option');
+  let o = os.item(idx);
   
 
   let d = document.createElement('div'); 
@@ -74,8 +79,47 @@ function printDom(data) {
   let p = document.createElement('img') ;
   p.setAttribute('id','cloud'); 
   d.insertAdjacentElement('beforeend', p); 
+  
   let i = document.querySelector('img#cloud');
-  i.setAttribute("src", 'cloud.png');
+
+
+  switch(o.getAttribute('value')){
+    case '360630' :
+      i.setAttribute("src", 'egypt-342.gif');
+      break;
+    case '524901' :
+      i.setAttribute("src", 'russia-634.gif');
+      break;
+    case '993800' :
+      i.setAttribute("src", 'south-africa-687.gif');
+      break;
+    case '1816670' :
+      i.setAttribute("src", 'china-314.gif');
+      break;
+    case '1850147' :
+      i.setAttribute("src", 'japan-459.gif');
+      break;
+    case '1880252' :
+      i.setAttribute("src", 'egypt-342.gif');
+      break;
+    case '2643743' :
+      i.setAttribute("src", 'united-kingdom-728.gif');
+      break;
+    case '2968815' :
+      i.setAttribute("src", 'france-370.gif');
+      break;
+    case '3451189' :
+      i.setAttribute("src", 'brazil-267.gif');
+      break;
+    default:
+      i.setAttribute("src", 'united-states-729.gif');
+      break;
+
+  }
+
+  /*
+  i.setAttribute("src", 'china-314.gif');
+  */
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
